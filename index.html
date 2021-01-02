@@ -2,7 +2,7 @@
 <html dir="ltr" lang="en-US">
   <head>
     <meta charset="utf-8" />
-    <title>questions about network packets</title>
+    <title>questions about python's magic methods</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="wickedcss.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
@@ -12,13 +12,13 @@
     <meta name="date" content="2020-06-08"/>
   </head>
   <body>
-    <h1>example question template</h1>
+    <h1>do you believe in magic methods?</h1>
     <div class="container">
       <div id="buttons">
         <p>
-        Hello! Here are some questions &amp; answers. The goal isn't to get all the questions
+        Hello! Here are some questions &amp; answers about Python's magic methods. The goal isn't to get all the questions
         "right". Instead, the goal is to learn something! If you find a topic you're interested in
-        learning more about, I'd encourage you to look it up and learn more.
+        learning more about, I'd encourage you to look it up and learn more. 
         </p>
 
         <p id="top-buttons">
@@ -30,18 +30,18 @@
       <div class="row">
         <div class="question">
           <h3>
-            here's a question
+            What does this method do?
           </h3>
+            <p>
+               <code> def __init__(self, a, b): </code>
+            </p>
         </div>
         <div class="answer">
           <h3>
-            here's an answer!
+            It "initializes" an instance of a class.
           </h3>
           <p>
-          some details about the answer
-          </p>
-          <p>
-          <code> $ a command </code>
+          That is, it creates an instance of a class, optionally using information passed in as parameters.
           </p>
         </div>
       </div>
@@ -49,23 +49,29 @@
       <div class="row">
         <div class="question">
           <h3>
-            here's another question
+            What do those double underscores mean?
           </h3>
         </div>
         <div class="answer">
           <h3>
-            here's another answer!
+            Those double underscores (some call them dunders) are a Pythonic convention for magic methods (some call them dunder methods).
           </h3>
-          <p>
-          some details about the answer
-          </p>
-          <p>
-          <code> $ another command </code>
-          </p>
         </div>
       </div>
     </div>
+    
+    <div class="row">
+      <div class="question">
+        <h3>Wait, what's a magic method?</h3>
+      </div>
+      <div class="answer">
+        <h3>A 'magic method' lets you work with Python's built-in syntax.</h3>
+        <p>You initialize a class in Python using the syntax <code>class = NewClass()</code>. Overriding <code>__init__</code> lets you customize that process.</p>
+      </div>
+    </div>
 
+    
+    
     <script>
       start()
     </script>
